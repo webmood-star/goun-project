@@ -5,40 +5,40 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-brand-main/10 via-brand-point/5 to-brand-accent/10">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
-            {/* 이미지 - 모바일에서는 먼저 표시 */}
-            <div className="lg:order-last lg:col-start-2">
-              <div className="relative lg:-ml-24 lg:mr-0">
-                <div className="relative w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl ml-auto">
-                  <Image
-                    src="/images/hero-main.png"
-                    alt="피부 관리를 받고 있는 여성"
-                    width={500}
-                    height={625}
-                    className="object-cover w-full h-full object-[0%_center]"
-                    priority
-                  />
-                </div>
-                
-                {/* 플로팅 리뷰 카드 */}
-                <div className="absolute -bottom-6 -right-4 bg-white rounded-xl shadow-lg px-6 py-3 transform hover:translate-y-1 transition-transform duration-300">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gradient-to-br from-brand-main to-brand-accent/30 rounded-full flex items-center justify-center shadow-inner">
-                      <span className="text-yellow-400 text-base drop-shadow-md">⭐</span>
-                    </div>
-                    <div>
-                      <div className="font-medium text-lg">4.9/5</div>
-                      <div className="text-sm text-brand-text/60">고객 만족도</div>
-                    </div>
+    <section className="relative min-h-[80vh] flex items-center bg-brand-main/40">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-4">
+          {/* 이미지 - 모바일에서는 먼저 표시 */}
+          <div className="lg:order-last lg:col-start-2">
+            <div className="relative lg:-ml-24 lg:mr-0">
+              <div className="relative w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] rounded-2xl overflow-hidden shadow-2xl ml-auto">
+                <Image
+                  src="/images/hero-main.png"
+                  alt="피부 관리를 받고 있는 여성"
+                  width={500}
+                  height={625}
+                  className="object-cover w-full h-full object-[0%_center]"
+                  priority
+                />
+              </div>
+              
+              {/* 플로팅 리뷰 카드 */}
+              <div className="absolute -bottom-6 -right-4 bg-white rounded-xl shadow-lg px-6 py-3 transform hover:translate-y-1 transition-transform duration-300">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-gradient-to-br from-brand-main to-brand-accent/30 rounded-full flex items-center justify-center shadow-inner">
+                    <span className="text-yellow-400 text-base drop-shadow-md">⭐</span>
+                  </div>
+                  <div>
+                    <div className="font-medium text-lg">4.9/5</div>
+                    <div className="text-sm text-brand-text/60">고객 만족도</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* 텍스트 콘텐츠 */}
-            <div className="text-center lg:text-left lg:col-start-1">
+          {/* 텍스트 콘텐츠 */}
+          <div className="text-center lg:text-left lg:col-start-1">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-text tracking-wide">
               <span className="block tracking-wider">아름다운 피부,</span>
               <span className="block mt-3 text-brand-cta tracking-wider">건강한 미래</span>
@@ -81,8 +81,6 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </section>
